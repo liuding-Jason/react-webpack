@@ -1,6 +1,6 @@
 # React Router
 	
->  A simple example of routing introduce the basic uses of react-router modules . Webpack1.X is used to be the build tools . See the [Home page](https://github.com/liuding-Jason/react-webpack)
+>  A simple example of routing introduce the basic uses of ***react-router*** modules . Webpack1.X is used to be the build tools . See the ***[Home page](https://github.com/liuding-Jason/react-webpack)*** .
 
 ## Build Setup
 
@@ -25,7 +25,8 @@ npm install
 # serve with hot reload at localhost:8000
 npm run dev
 
-> note : --host 192.168.1.198 --port 8000 can be added to your 'dev command' in package.json , 
+* note : 
+--host 192.168.1.198 --port 8000 can be added to your 'dev command' in package.json , 
 so that you can change your host and port .
 
 # build for production with minification
