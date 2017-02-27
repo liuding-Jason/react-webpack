@@ -1,0 +1,76 @@
+/**
+ * Created by liuding on 2017/2/27.
+ * 配置的打包文件
+ */
+
+
+var webpack = require('webpack');
+var HtmlWebpackPlugin = require('html-webpack-plugin');
+//var OpenBrowserPlugin = require('open-browser-webpack-plugin');
+var loaders = require('./webpack.loaders');
+
+module.exports = {
+  devtool: 'eval-source-map',//配置生成Source Maps，选择合适的选项
+  entry:  __dirname + "/app/components/app.jsx",//已多次提及的唯一入口文件
+  output: {
+    path: __dirname + "/build",//打包后的文件存放的地方
+    filename: "bundle.js"//打包后输出文件的文件名
+  },
+
+  //更多配置项
+  resolve: {
+    extensions: ['', '.js', '.jsx']    //自动扩展文件后缀名，意味着我们require模块可以省略不写后缀名
+  },
+
+  // 模块
+  module: {//在配置文件里添加JSON loader
+    loaders: loaders
+  },
+
+  // 插件
+  plugins: [
+
+  	// 压缩js
+  	new webpack.optimize.UglifyJsPlugin({
+	    compress: {
+	        warnings: false,
+	    },
+	    output: {
+	        comments: false,
+	    },
+	  }),
+
+    //new webpack.BannerPlugin("Copyright Flying Unicorns inc.")//在这个数组中new一个就可以了
+  	new HtmlWebpackPlugin({
+  	  title: '批发选货工具React',
+      template: __dirname + "/index.tmpl.html" ,//new 一个这个插件的实例，并传入相关的参数
+      hash : true ,
+      //minify : {"html-minifier"},
+      excludeChunks: ['dev-helper'] //通过设置excludeChunks选项还可以排除某些块
+    }),
+    //new ExtractTextPlugin("[name]-[hash].css")
+
+
+    // 自动打开浏览器新页面
+    /*new OpenBrowserPlugin({
+      url: 'http://localhost:8080'
+    })*/
+  ],
+
+  devServer: {
+    proxy: {
+      //"**": "http://qa.wholesale.select.kuandd.com"
+      "**": "http://192.168.1.198"
+    },
+    contentBase: "./build",//本地服务器所加载的页面所在的目录
+    port : 8000 ,
+    colors: true,//终端中输出结果为彩色
+    historyApiFallback: true,//不跳转
+    inline: true//实时刷新
+  } ,
+
+  // 引入外部的ReactDOM资源
+  /*externals: {
+    'react-dom' : 'ReactDOM'
+  },*/
+}

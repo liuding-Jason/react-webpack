@@ -1,0 +1,51 @@
+{
+  "name": "react-router",
+  "version": "0.0.1",
+  "description": "A project React Router example",
+  "main": "webpack.config.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "webpack",
+    "dev": "webpack-dev-server --devtool eval --progress --host 192.168.1.198 --port 8000 --colors",
+    "deploy": "set NODE_ENV=production && webpack -p --config webpack.production.config.js"
+  },
+  "devDependencies": {
+    "babel-core": "^6.17.0",
+    "babel-loader": "^6.2.5",
+    "babel-preset-es2015": "^6.16.0",
+    "babel-preset-react": "^6.16.0",
+    "clean-webpack-plugin": "^0.1.14",
+    "copy-webpack-plugin": "^4.0.1",
+    "css-loader": "^0.26.0",
+    "extract-text-webpack-plugin": "^1.0.1",
+    "file-loader": "^0.9.0",
+    "html-webpack-plugin": "^2.24.1",
+    "json-loader": "^0.5.4",
+    "open-browser-webpack-plugin": "0.0.3",
+    "react-addons-css-transition-group": "^15.4.1",
+    "style-loader": "^0.13.1",
+    "url-loader": "^0.5.7",
+    "webpack": "^1.13.2",
+    "webpack-dev-server": "^1.16.2"
+  },
+  "dependencies": {
+    "react": "^15.3.2",
+    "react-router": "^3.0.0",
+    "react-dom": "^15.3.2"
+  } ,
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/liuding-Jason/react-webpack.git"
+  },
+  "keywords": [
+    "React",
+    "React-Router",
+    "JavaScript"
+  ],
+  "author": "liuding",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/liuding-Jason/react-webpack/issues"
+  },
+  "homepage": "https://github.com/liuding-Jason/react-webpack#readme"
+}
