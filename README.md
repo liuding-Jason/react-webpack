@@ -25,7 +25,8 @@ npm install
 # serve with hot reload at localhost:8000
 npm run dev
 
-> note : --host 192.168.1.198 --port 8000 can be added to your 'dev command' in package.json , so that you can change your host and port .
+> note : --host 192.168.1.198 --port 8000 can be added to your 'dev command' in package.json , 
+so that you can change your host and port .
 
 # build for production with minification
 npm run build
