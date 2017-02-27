@@ -15,6 +15,8 @@ copy webpack.config.js.dist ./webpack.config.js
 cd ./app
 copy config.js.dist ./config.js
 
+```
+
 ### Run project
 
 ``` bash
