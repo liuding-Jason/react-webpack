@@ -6,7 +6,7 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "webpack",
-    "dev": "webpack-dev-server --devtool eval --progress --host 192.168.1.198 --port 8000 --colors",
+    "dev": "webpack-dev-server --devtool eval --progress --colors",
     "deploy": "set NODE_ENV=production && webpack -p --config webpack.production.config.js"
   },
   "devDependencies": {
