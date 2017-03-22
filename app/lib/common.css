@@ -1,0 +1,208 @@
+*, :before, :after {
+
+    /* 兼容处理 */
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+
+html{
+	font-family: sans-serif, Arial, Helvetica, "宋体";
+}
+
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, i, u, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, fieldset, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    vertical-align: baseline;
+    font: inherit;
+    font-size: 100%;
+}
+
+html {
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    font-family: sans-serif;
+    -webkit-text-size-adjust: 100%;
+    -ms-text-size-adjust: 100%;
+    -webkit-text-size-adjust: 100%;
+}
+
+body {
+    -webkit-touch-callout: none;
+    -webkit-font-smoothing: antialiased;
+    font-smoothing: antialiased;
+    -webkit-text-size-adjust: none;
+    -moz-text-size-adjust: none;
+    text-size-adjust: none;
+    -webkit-tap-highlight-color: transparent;
+    -webkit-tap-highlight-color: transparent;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    overflow: hidden;
+    margin: 0;
+    padding: 0;
+    color: #222;
+    word-wrap: break-word;
+    font-size: 14px;
+    font-family: -apple-system;
+    font-family: -apple-system,"Helvetica Neue",Roboto,"Segoe UI",sans-serif;
+    line-height: 20px;
+    text-rendering: optimizeLegibility;
+    -webkit-backface-visibility: hidden;
+    -webkit-user-drag: none;
+    -ms-content-zooming: none ;
+}
+
+
+button, input, select, textarea {
+    margin: 0;
+    font-size: 100%;
+    font-family: inherit;
+    outline-offset: 0;
+    outline-style: none;
+    outline-width: 0;
+    -webkit-font-smoothing: inherit;
+    background-image: none;
+}
+
+label, input, button, select, textarea {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.42857;
+}
+
+input, button, select, textarea {
+    font-family: -apple-system,"Helvetica Neue",Roboto,"Segoe UI",sans-serif;
+}
+
+input[type=button]{
+    border : none;
+}
+
+input[type=search] {
+    -webkit-box-sizing: content-box;
+    -moz-box-sizing: content-box;
+    box-sizing: content-box;
+    -webkit-appearance: textfield;
+}
+
+input[type=search] {
+    color: #fff;
+}
+
+textarea, input[type=text], input[type=password], input[type=datetime], input[type=datetime-local], input[type=date], input[type=month], input[type=time], input[type=week], input[type=number], input[type=email], input[type=url], input[type=search], input[type=tel], input[type=color] {
+    border: 0;
+}
+textarea, input[type=text], input[type=password], input[type=datetime], input[type=datetime-local], input[type=date], input[type=month], input[type=time], input[type=week], input[type=number], input[type=email], input[type=url], input[type=search], input[type=tel], input[type=color] {
+    display: block;
+    padding-top: 2px;
+    padding-left: 0;
+    height: 34px;
+    color: #111;
+    vertical-align: middle;
+    font-size: 14px;
+    line-height: 16px;
+}
+
+button, input {
+    line-height: normal;
+}
+
+a {
+    text-decoration: none;
+}
+
+a, button, :focus, a:focus, button:focus, a:active, a:hover {
+    outline: 0;
+}
+
+label, input, button, select, textarea {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.42857;
+}
+
+input[type=radio], input[type=checkbox] {
+    margin: 0;
+    line-height: normal;
+}
+
+
+ol, ul {
+    list-style: none;
+}
+
+img {
+    -webkit-user-drag: none;
+}
+
+
+p {
+    margin: 0 0 10px;
+}
+
+button, html input[type=button], input[type=reset], input[type=submit] {
+    cursor: pointer;
+    -webkit-appearance: button;
+}
+
+button, html input[type=button], input[type=reset], input[type=submit] {
+    cursor: pointer;
+    -webkit-appearance: button;
+}
+
+
+a.act:after {
+    display: box;
+    content: '';
+    position: absolute;
+    bottom: 6px;
+    left: 43%;
+    width: 6px;
+    height: 5px;
+    background: url(../img/icon_filter_arrow_down@2x.png) no-repeat;
+    background-size: cover;
+}
+
+
+.clearFloat:after{
+	content: "";
+	height: 0;
+	display: block;
+	clear: both;
+	visibility: hidden;
+}
+
+.fixAuto{
+	overflow: hidden;
+}
+
+.fixAuto:before{
+
+	content: "";
+	width: 0;
+
+	display: block;
+	float: left;
+	
+	/*根据实际需求确定*/
+	/*padding-top: 10%;*/
+}
+
+.fr{
+    float: right;
+}
+
+.fl{
+    float: left;
+}
