@@ -206,3 +206,8 @@ a.act:after {
 .fl{
     float: left;
 }
+
+/* body */
+html {
+    background-color: #fdfdfd ;
+}
