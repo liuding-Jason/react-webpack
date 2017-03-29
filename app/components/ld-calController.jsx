@@ -14,7 +14,7 @@ module.exports = class CalController extends React.Component {
 		}
 	}
 
-	componentDillMount(){
+	componentDidMount(){
 		ValueStore.addChangeListener(this._onChange.bind(this));
 	}
 
