@@ -1,0 +1,19 @@
+
+.cal-head {
+	text-align: center;
+	background-color: #FD8E6F ;
+}
+
+.cal-btn{
+	display: inline-block;
+	height: 30px; 
+	line-height: 30px ;
+	text-align: center;
+	font-size: 12px ;
+	background-color: #BC86CB ;
+	outline: none;
+	color: white ;
+	margin-left: 15px;
+	border-radius: 5px;
+	border:1px solid #43C1B5;
+}

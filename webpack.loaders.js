@@ -17,21 +17,20 @@ module.exports = [
           presets: ['es2015','react']
         }
       },
-
       /*{
         test: /\.js$/,
         exclude: /node_modules/,
         loader: 'babel'
       }*/
 
-      /*{
-        test: /\.css$/,
-        loader: 'style!css'//添加对样式表的处理
-      }*/
       {
         test: /\.css$/,
-        loader: 'style-loader!css-loader'
+        loader: 'style!css'//添加对样式表的处理
       },
+      /*{
+        test: /\.css$/,
+        loader: 'style-loader!css-loader'
+      },*/
       {
         test: /\.(woff|woff2)$/,
         loader: "url?prefix=font/&limit=5000"
