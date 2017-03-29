@@ -36,7 +36,11 @@ so that you can change your host and port .
 npm run build
 
 ```
-## CopyRight
 
-Copyright (c) 2017-present , Liuding, Inc.
-All rights reserved.
+***
+# Zhihu
+
+My ZhiHu Home Page ***[柳丁Jason Chen](https://www.zhihu.com/people/liu-ding-jasonchen)*** 
+
+# Lincense
+(MIT)
