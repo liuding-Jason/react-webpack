@@ -11,6 +11,7 @@ import counter from "../reducers" ;
 import Home        from "./ld-home" ;
 import List        from "./ld-list";
 import CalController from "./ld-calController" ;
+import Counter from "./ld-counter" ;
 
 import SetDpr from "../util/dpr" ;
 
@@ -27,6 +28,7 @@ function initRouter (){
 	    <Route path="/home" component={Home}/>
 	    <Route path="/list" component={List} />
 	    <Route path="/calculate" component={CalController} />
+	    <Route path="/counter" component={Counter} />
 	  </Router>
 	), 
 	rootEle ,  
