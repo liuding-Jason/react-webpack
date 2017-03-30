@@ -8,8 +8,8 @@
 
 **Store** is a store of states . Always remeber that you can ONLY cteate one state in your app .
 ```bash
-	import {createStore} from "redux" ;
-	const store = createStore(reduce) ;
+import {createStore} from "redux" ;
+const store = createStore(reduce) ;
 ```
 
 ## Action
