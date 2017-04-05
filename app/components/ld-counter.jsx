@@ -4,10 +4,11 @@
 */
 
 import React , {Component} from "react" ;
-import {createStore} from "redux" ;
 import reduce from "../redux/reduce" ;
 
-const store = createStore(reduce);
+import {createStore} from "redux" ;
+const store = createStore(reduce) ;
+
 module.exports = class Counter extends React.Component {
 
 	constructor(props){

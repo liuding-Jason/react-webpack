@@ -21,7 +21,19 @@ const store = createStore(reduce) ;
 
 ## Reduce
 
-**Reduce** is a pure function .
+**Reduce** is a pure function . How about **pure function** ? A pure function would return the same result when given the same params . 
+
+```bash
+// pure function
+function square(x){return x * x ;}
+
+// impure function
+function square(x){
+	updateXInDatabase(x) ;
+	return x * x ;
+}
+```
+
 ```bash
 /*
 * a simple redux reduce which ONLY contains a single state 
